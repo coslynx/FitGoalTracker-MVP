@@ -1,0 +1,18 @@
+{
+  "setup": [
+    "npm install",
+    "createdb fitness_tracker",
+    "psql -U admin -d fitness_tracker -f api/migrations/init.sql"
+  ],
+  "start": [
+    "npm run dev",
+    "node api/index.ts"
+  ],
+  "build": [
+    "npm run build"
+  ],
+  "test": [
+    "npm run test"
+  ]
+}
+```
